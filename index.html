@@ -66,8 +66,8 @@
                         A passionate student web development group creating modern, responsive, and innovative digital experiences.
                     </p>
                     <div class="hero__buttons">
-                        <button class="btn btn--primary btn-hover-lift hover-bounce" data-scroll-to="projects">
-                            View Our Work
+                        <button class="btn btn--primary btn-hover-lift hover-bounce" data-scroll-to="services">
+                            Our Services
                         </button>
                         <button class="btn btn--secondary btn-hover-lift hover-bounce" data-modal="contact">
                             Get In Touch
@@ -142,16 +142,16 @@
 
                     <div class="about__stats fade-in-stagger">
                         <div class="about__stat" data-reveal="bounceIn" data-delay="400">
-                            <span class="about__stat-number" data-count="50" data-suffix="+">0</span>
+                            <span class="about__stat-number" data-count="0" data-suffix="">0</span>
                             <span class="about__stat-label">Projects Completed</span>
                         </div>
                         <div class="about__stat" data-reveal="bounceIn" data-delay="500">
-                            <span class="about__stat-number" data-count="3" data-suffix="">0</span>
-                            <span class="about__stat-label">Years Experience</span>
+                            <span class="about__stat-number" data-count="1" data-suffix="">0</span>
+                            <span class="about__stat-label">Year Experience</span>
                         </div>
                         <div class="about__stat" data-reveal="bounceIn" data-delay="600">
                             <span class="about__stat-number" data-count="100" data-suffix="%">0</span>
-                            <span class="about__stat-label">Client Satisfaction</span>
+                            <span class="about__stat-label">Learning Enthusiasm</span>
                         </div>
                     </div>
                 </div>
@@ -210,19 +210,26 @@
             <div class="section__header" data-reveal="fadeInUp" data-delay="0">
                 <h2 class="section__title">Our Projects</h2>
                 <p class="section__subtitle">
-                    Explore our portfolio of innovative web applications and digital solutions.
+                    We're just getting started! Our first projects will be showcased here soon.
                 </p>
             </div>
 
-            <div class="projects__filters fade-in-stagger" data-reveal="slideInLeft" data-delay="200">
-                <button class="filter-btn filter-btn--active hover-bounce" data-filter="all">All</button>
-                <button class="filter-btn hover-bounce" data-filter="frontend">Frontend</button>
-                <button class="filter-btn hover-bounce" data-filter="fullstack">Fullstack</button>
-                <button class="filter-btn hover-bounce" data-filter="uiux">UI/UX</button>
-            </div>
-
-            <div class="projects__grid" id="projectsGrid">
-                <!-- Projects will be dynamically loaded here -->
+            <div class="projects__empty" data-reveal="fadeInUp" data-delay="200" style="text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; margin: 40px 0;">
+                <div style="color: white; max-width: 600px; margin: 0 auto;">
+                    <div style="font-size: 4rem; margin-bottom: 20px; opacity: 0.8;">🚀</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px; font-weight: 600;">Coming Soon</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.9; margin-bottom: 30px;">
+                        We're currently working on our first projects and will be showcasing them here very soon. Stay tuned for amazing web applications and digital solutions!
+                    </p>
+                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <button class="btn btn--primary btn-hover-lift hover-bounce" data-scroll-to="services" style="background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.3); color: white;">
+                            Our Services
+                        </button>
+                        <button class="btn btn--secondary btn-hover-lift hover-bounce" data-modal="contact" style="background: transparent; border: 2px solid rgba(255,255,255,0.5); color: white;">
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
