@@ -643,7 +643,7 @@ class LoadingAnimation {
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: linear-gradient(135deg, #1e293b 0%, #334155 25%, #475569 50%, #64748b 75%, #94a3b8 100%);
+      background: linear-gradient(white);
       display: flex;
       align-items: center;
       justify-content: center;
