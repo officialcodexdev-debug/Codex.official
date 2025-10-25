@@ -273,7 +273,7 @@
 .service-card {
     background: var(--color-neutral-light);
     border-radius: var(--radius-xl);
-    padding: var(--space-8);
+    padding: var(--space-4);
     text-align: center;
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
@@ -330,7 +330,7 @@
     font-size: var(--text-xl);
     font-weight: 600;
     color: var(--color-neutral-900);
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-1);
 }
 
 .service-card__description {
