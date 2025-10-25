@@ -649,7 +649,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-8);
-    grid-template-columns: repeat(3, 1fr);
 }
 
 @media (min-width: 768px) {
