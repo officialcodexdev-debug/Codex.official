@@ -626,7 +626,7 @@ class LoadingAnimation {
         loader.innerHTML = `
       <div class="loading-content" style="font-family: 'Poppins', sans-serif;">
         <div class="loading-logo">
-          <div class="loading-logo-text" style="font-family: Permanent Marker, cursive; font-size:60px;">CODE<img src="assets/images/x-font.png" style="height: 100px; width: auto; vertical-align: middle; margin-left: -15px; " alt="X"></div>
+          <div class="loading-logo-text" style="font-family: Permanent Marker, cursive; font-size:60px;">CODEX</div>
         </div>
         <div class="loading-spinner">
           <div class="spinner-ring"></div>
