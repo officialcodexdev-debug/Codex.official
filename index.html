@@ -1,37 +1,41 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Dev - Student Web Development Group</title>
     <meta name="description" content="A modern portfolio website showcasing our student web development group's projects and skills">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <!-- CSS Files -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/animations.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
-    
+
     <!-- Navigation -->
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" style="font-family: 'Poppins', sans-serif;">
         <div class="nav__container">
             <div class="nav__logo">
-                <span class="nav__logo-text">Nexus</span>
-                <span class="nav__logo-accent">Dev</span>
+                <span class="nav__logo-text">CODEX</span>
+                <!-- <span class="nav__logo-accent">Dev</span> -->
             </div>
-            
+
             <div class="nav__menu" id="navMenu">
                 <a href="#home" class="nav__link">Home</a>
                 <a href="#about" class="nav__link">About</a>
@@ -39,7 +43,7 @@
                 <a href="#services" class="nav__link">Services</a>
                 <a href="#contact" class="nav__link">Contact</a>
             </div>
-            
+
             <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
                 <span class="nav__toggle-line"></span>
                 <span class="nav__toggle-line"></span>
@@ -50,17 +54,16 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero__container">
+        <div class="hero__container" style="font-family: 'Poppins', sans-serif;">
             <div class="hero__content">
                 <div class="hero__text">
                     <h1 class="hero__title">
-                        We Build
+                        We Build<br>
                         <span class="hero__title-accent" id="typedText">Amazing Websites</span>
                         <span class="hero__cursor">|</span>
                     </h1>
                     <p class="hero__subtitle">
-                        A passionate student web development group creating modern, 
-                        responsive, and innovative digital experiences.
+                        A passionate student web development group creating modern, responsive, and innovative digital experiences.
                     </p>
                     <div class="hero__buttons">
                         <button class="btn btn--primary btn-hover-lift hover-bounce" data-scroll-to="projects">
@@ -71,7 +74,7 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="hero__visual">
                     <div class="hero__image-container">
                         <div class="hero__image" id="heroImage">
@@ -106,7 +109,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Background Elements -->
         <div class="hero__bg-elements">
             <div class="hero__bg-circle hero__bg-circle--1"></div>
@@ -119,42 +122,42 @@
     <section class="about" id="about">
         <div class="about__container">
             <div class="section__header" data-reveal="fadeInUp" data-delay="0">
-                <h2 class="section__title">About Our Team</h2>
-                <p class="section__subtitle">
-                    We are a group of passionate students dedicated to creating 
-                    exceptional web experiences through modern technologies.
+                <h2 class="section__title" style="font-family: 'Poppins', sans-serif;">About Our Team</h2>
+                <p class="section__subtitle" style="font-family: 'Inter', sans-serif; width: 100%;">
+                    We are a passionate collective of web creators who believe the internet should feel alive, intuitive, and unforgettable. Our journey started with curiosity, turned into craft, and now stands as a digital studio dedicated to transforming bold ideas into
+                    interactive realities. Every project we take on is a blend of creativity, performance, and smart engineering. We design with emotion, develop with precision, and deliver websites that speak for brands long before a word is read. Our
+                    work isn’t just about pixels and code. It’s about building experiences that inspire trust, spark excitement, and help businesses grow in a world that never stops scrolling.
                 </p>
+
             </div>
-            
+
             <div class="about__content">
                 <div class="about__text" data-reveal="slideInLeft" data-delay="200">
                     <div class="about__mission">
-                        <h3 class="about__mission-title">Our Mission</h3>
-                        <p class="about__mission-text">
-                            To bridge the gap between design and development, creating 
-                            digital solutions that are not only functional but also 
-                            beautiful and user-friendly.
+                        <h3 class="about__mission-title" style="font-family: 'Poppins', sans-serif;">Our Mission</h3>
+                        <p class="about__mission-text" style="font-family: 'Inter', sans-serif;">
+                            To bridge the gap between design and development, creating digital solutions that are not only functional but also beautiful and user-friendly.
                         </p>
                     </div>
-                    
+
                     <div class="about__stats fade-in-stagger">
                         <div class="about__stat" data-reveal="bounceIn" data-delay="400">
-                            <span class="about__stat-number">50+</span>
+                            <span class="about__stat-number" data-count="50" data-suffix="+">0</span>
                             <span class="about__stat-label">Projects Completed</span>
                         </div>
                         <div class="about__stat" data-reveal="bounceIn" data-delay="500">
-                            <span class="about__stat-number">3</span>
+                            <span class="about__stat-number" data-count="3" data-suffix="">0</span>
                             <span class="about__stat-label">Years Experience</span>
                         </div>
                         <div class="about__stat" data-reveal="bounceIn" data-delay="600">
-                            <span class="about__stat-number">100%</span>
+                            <span class="about__stat-number" data-count="100" data-suffix="%">0</span>
                             <span class="about__stat-label">Client Satisfaction</span>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="about__skills" data-reveal="slideInRight" data-delay="300">
-                    <h3 class="about__skills-title">Our Expertise</h3>
+                    <h3 class="about__skills-title" style="font-family: 'Poppins', sans-serif;">Our Expertise</h3>
                     <div class="skills fade-in-stagger">
                         <div class="skill" data-reveal="scaleIn" data-delay="700">
                             <div class="skill__header">
@@ -165,7 +168,7 @@
                                 <div class="skill__progress" data-percent="95"></div>
                             </div>
                         </div>
-                        
+
                         <div class="skill" data-reveal="scaleIn" data-delay="800">
                             <div class="skill__header">
                                 <span class="skill__name">Backend Development</span>
@@ -175,7 +178,7 @@
                                 <div class="skill__progress" data-percent="85"></div>
                             </div>
                         </div>
-                        
+
                         <div class="skill" data-reveal="scaleIn" data-delay="900">
                             <div class="skill__header">
                                 <span class="skill__name">UI/UX Design</span>
@@ -185,7 +188,7 @@
                                 <div class="skill__progress" data-percent="90"></div>
                             </div>
                         </div>
-                        
+
                         <div class="skill" data-reveal="scaleIn" data-delay="1000">
                             <div class="skill__header">
                                 <span class="skill__name">Mobile Development</span>
@@ -202,7 +205,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects" id="projects">
+    <section class="projects" id="projects" style="font-family: 'Poppins', sans-serif;">
         <div class="projects__container">
             <div class="section__header" data-reveal="fadeInUp" data-delay="0">
                 <h2 class="section__title">Our Projects</h2>
@@ -210,14 +213,14 @@
                     Explore our portfolio of innovative web applications and digital solutions.
                 </p>
             </div>
-            
+
             <div class="projects__filters fade-in-stagger" data-reveal="slideInLeft" data-delay="200">
                 <button class="filter-btn filter-btn--active hover-bounce" data-filter="all">All</button>
                 <button class="filter-btn hover-bounce" data-filter="frontend">Frontend</button>
                 <button class="filter-btn hover-bounce" data-filter="fullstack">Fullstack</button>
                 <button class="filter-btn hover-bounce" data-filter="uiux">UI/UX</button>
             </div>
-            
+
             <div class="projects__grid" id="projectsGrid">
                 <!-- Projects will be dynamically loaded here -->
             </div>
@@ -225,15 +228,15 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section class="services" id="services" style="font-family: 'Poppins', sans-serif;">
         <div class="services__container">
             <div class="section__header" data-reveal="fadeInUp" data-delay="0">
-                <h2 class="section__title">What We Offer</h2>
-                <p class="section__subtitle">
+                <h2 class="section__title" style="font-family: 'Poppins', sans-serif;">What We Offer</h2>
+                <p class="section__subtitle" style="font-family: 'Inter', sans-serif;">
                     Comprehensive web development services tailored to your needs.
                 </p>
             </div>
-            
+
             <div class="services__grid fade-in-stagger">
                 <div class="service-card card-hover-lift" data-reveal="zoomIn" data-delay="200">
                     <div class="service-card__icon icon-hover-spin">
@@ -245,11 +248,10 @@
                     </div>
                     <h3 class="service-card__title">Web Development</h3>
                     <p class="service-card__description">
-                        Custom websites and web applications built with modern technologies 
-                        and best practices.
+                        Custom websites and web applications built with modern technologies and best practices.
                     </p>
                 </div>
-                
+
                 <div class="service-card card-hover-lift" data-reveal="zoomIn" data-delay="300">
                     <div class="service-card__icon icon-hover-spin">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -265,11 +267,10 @@
                     </div>
                     <h3 class="service-card__title">UI/UX Design</h3>
                     <p class="service-card__description">
-                        User-centered design solutions that enhance user experience 
-                        and drive engagement.
+                        User-centered design solutions that enhance user experience and drive engagement.
                     </p>
                 </div>
-                
+
                 <div class="service-card card-hover-lift" data-reveal="zoomIn" data-delay="400">
                     <div class="service-card__icon icon-hover-spin">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -280,11 +281,10 @@
                     </div>
                     <h3 class="service-card__title">Mobile Apps</h3>
                     <p class="service-card__description">
-                        Cross-platform mobile applications that work seamlessly 
-                        across all devices.
+                        Cross-platform mobile applications that work seamlessly across all devices.
                     </p>
                 </div>
-                
+
                 <div class="service-card card-hover-lift" data-reveal="zoomIn" data-delay="500">
                     <div class="service-card__icon icon-hover-spin">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -294,8 +294,7 @@
                     </div>
                     <h3 class="service-card__title">Consulting</h3>
                     <p class="service-card__description">
-                        Technical consulting and guidance to help you make informed 
-                        decisions about your digital strategy.
+                        Technical consulting and guidance to help you make informed decisions about your digital strategy.
                     </p>
                 </div>
             </div>
@@ -304,14 +303,14 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <div class="contact__container">
+        <div class="contact__container" style="font-family: 'Poppins', sans-serif;">
             <div class="section__header" data-reveal="fadeInUp" data-delay="0">
                 <h2 class="section__title">Get In Touch</h2>
                 <p class="section__subtitle">
                     Ready to start your next project? Let's discuss how we can help.
                 </p>
             </div>
-            
+
             <div class="contact__content">
                 <div class="contact__info">
                     <div class="contact__item">
@@ -326,7 +325,7 @@
                             <p class="contact__value">hello@nexusdev.com</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact__item">
                         <div class="contact__icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -338,7 +337,7 @@
                             <p class="contact__value">+1 (555) 123-4567</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact__item">
                         <div class="contact__icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -352,23 +351,23 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <form class="contact__form" id="contactForm">
                     <div class="form__group">
                         <input type="text" id="name" name="name" class="form__input" required>
                         <label for="name" class="form__label">Your Name</label>
                     </div>
-                    
+
                     <div class="form__group">
                         <input type="email" id="email" name="email" class="form__input" required>
                         <label for="email" class="form__label">Email Address</label>
                     </div>
-                    
+
                     <div class="form__group">
                         <textarea id="message" name="message" class="form__input form__input--textarea" rows="5" required></textarea>
                         <label for="message" class="form__label">Your Message</label>
                     </div>
-                    
+
                     <button type="submit" class="btn btn--primary btn--full">
                         Send Message
                     </button>
@@ -378,7 +377,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="font-family: 'Poppins', sans-serif;">
         <div class="footer__container">
             <div class="footer__content">
                 <div class="footer__brand">
@@ -390,7 +389,7 @@
                         Building the future of web development, one project at a time.
                     </p>
                 </div>
-                
+
                 <div class="footer__links">
                     <div class="footer__column">
                         <h4 class="footer__title">Quick Links</h4>
@@ -399,7 +398,7 @@
                         <a href="#projects" class="footer__link">Projects</a>
                         <a href="#services" class="footer__link">Services</a>
                     </div>
-                    
+
                     <div class="footer__column">
                         <h4 class="footer__title">Connect</h4>
                         <a href="#" class="footer__link">GitHub</a>
@@ -409,7 +408,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer__bottom">
                 <p class="footer__copyright">
                     &copy; 2024 Nexus Dev. All rights reserved.
@@ -447,23 +446,23 @@
             <div class="modal__body">
                 <h2 class="modal__title">Get In Touch</h2>
                 <p class="modal__subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-                
+
                 <form class="contact__form contact__form--modal" id="contactModalForm">
                     <div class="form__group">
                         <input type="text" id="modalName" name="name" class="form__input" required>
                         <label for="modalName" class="form__label">Your Name</label>
                     </div>
-                    
+
                     <div class="form__group">
                         <input type="email" id="modalEmail" name="email" class="form__input" required>
                         <label for="modalEmail" class="form__label">Email Address</label>
                     </div>
-                    
+
                     <div class="form__group">
                         <textarea id="modalMessage" name="message" class="form__input form__input--textarea" rows="4" required></textarea>
                         <label for="modalMessage" class="form__label">Your Message</label>
                     </div>
-                    
+
                     <button type="submit" class="btn btn--primary btn--full">
                         Send Message
                     </button>
@@ -472,22 +471,66 @@
         </div>
     </div>
 
-    <!-- Toast Notification -->
-    <div class="toast" id="toast">
-        <div class="toast__content">
-            <div class="toast__icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22,4 12,14.01 9,11.01"/>
-                </svg>
-            </div>
-            <div class="toast__message" id="toastMessage">Message sent successfully!</div>
+    <!-- Simple Toast Notification -->
+    <div id="simpleToast" style="
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #1f2937;
+        color: white;
+        padding: 16px 20px;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        z-index: 10000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        border: 2px solid #3b82f6;
+        max-width: 300px;
+        display: none;
+    ">
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="color: #10b981; font-size: 20px;">✓</div>
+            <div id="simpleToastMessage">Message sent successfully!</div>
         </div>
     </div>
+
 
     <!-- JavaScript Files -->
     <script src="scripts/projects-data.js"></script>
     <script src="scripts/animations.js"></script>
     <script src="scripts/main.js"></script>
+
+
+    <!-- Toast Notification System -->
+    <script>
+        function showSimpleToast(message) {
+            const toast = document.getElementById("simpleToast");
+            const messageEl = document.getElementById("simpleToastMessage");
+
+            if (toast && messageEl) {
+                messageEl.textContent = message;
+                toast.style.display = "block";
+                toast.style.transform = "translateX(0)";
+
+                setTimeout(() => {
+                    toast.style.transform = "translateX(100%)";
+                    setTimeout(() => {
+                        toast.style.display = "none";
+                    }, 300);
+                }, 3000);
+            }
+        }
+
+        // Override the FormManager showToast method
+        if (typeof Animations !== 'undefined' && Animations.FormManager) {
+            const originalFormManager = Animations.FormManager;
+            Animations.FormManager = function() {
+                const instance = new originalFormManager();
+                instance.showToast = showSimpleToast;
+                return instance;
+            };
+        }
+    </script>
 </body>
+
 </html>
