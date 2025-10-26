@@ -127,8 +127,9 @@
 
 .form__input:focus+.form__label,
 .form__input:not(:placeholder-shown)+.form__label {
-    top: -8px;
+    top: -11px;
     left: var(--space-3);
+    background-color: rgba(248, 250, 252, 0.8);
     font-size: var(--text-sm);
     color: var(--color-primary);
     font-weight: 500;
